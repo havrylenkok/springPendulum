@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>Spring Pendulum</title>
+  <meta charset="UTF-8">
+  <script src="src/service/jquery-1.12.4.min.js"></script>
+  <script src="src/index.js"></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<main>
+  <h3>Spring Pendulum</h3>
+  <form>
+    <fieldset class="form-group col-xs-4">
+      <input type="text" id="k" class="form-control col-xs-2"
+             placeholder="k, коеф. жесткости пружины">
+      <input type="text" id="m" class="form-control"
+             placeholder="m, масса груза">
+      <input type="text" id="T" class="form-control"
+             placeholder="T, время моделирования">
+      <input type="text" id="c" class="form-control"
+             placeholder="c, коеф. трения о воздух">
+      <input type="text" id="y0" class="form-control"
+             placeholder="y0, начальное отклонение пружины">
+      <input type="text" id="v0" class="form-control"
+             placeholder="v0, начальная скорость пружины">
+
+      <input type="button" id="start" class="btn btn-primary" value="Start">
+      <input type="button" id="stop" class="btn btn-danger" value="Stop">
+    </fieldset>
+  </form>
+  <div>
+    <h3>Step: <span id="curT">0</span></h3>
+  <img src="img/spring.png" id="img"/>
+  </div>
+</main>
+</body>
+</html>
