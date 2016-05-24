@@ -14,19 +14,45 @@
 <main>
   <h3>Spring Pendulum</h3>
   <form>
-    <fieldset class="form-group col-xs-4">
-      <input type="text" id="k" class="form-control col-xs-2"
-             placeholder="k, коеф. жесткости пружины">
+    <fieldset class="form-group  col-xs-4">
+
+      <div class="input-group col-xs-12">
+        <div class="input-group-addon">k</div>
+      <input type="text" id="k" class="form-control"
+             placeholder="коэффициент жесткости пружины">
+      </div>
+
+
+      <div class="input-group col-xs-12">
+        <div class="input-group-addon">m</div>
       <input type="text" id="m" class="form-control"
-             placeholder="m, масса груза">
+             placeholder="масса груза">
+        </div>
+
+      <div class="input-group col-xs-12">
+        <div class="input-group-addon">T</div>
       <input type="text" id="T" class="form-control"
-             placeholder="T, время моделирования">
+             placeholder="время моделирования">
+        </div>
+
+
+      <div class="input-group col-xs-12">
+        <div class="input-group-addon">c</div>
       <input type="text" id="c" class="form-control"
-             placeholder="c, коеф. трения о воздух">
+             placeholder="коэффициент трения о воздух">
+        </div>
+
+      <div class="input-group col-xs-12">
+        <div class="input-group-addon">y0</div>
       <input type="text" id="y0" class="form-control"
-             placeholder="y0, начальное отклонение пружины">
+             placeholder="начальное отклонение пружины">
+        </div>
+
+      <div class="input-group col-xs-12">
+        <div class="input-group-addon">v0</div>
       <input type="text" id="v0" class="form-control"
-             placeholder="v0, начальная скорость пружины">
+             placeholder="начальная скорость пружины">
+        </div>
 
       <input type="button" id="start" class="btn btn-primary" value="Start">
       <input type="button" id="stop" class="btn btn-danger" value="Stop">
